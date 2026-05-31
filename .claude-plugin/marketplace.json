@@ -1,0 +1,11 @@
+{
+  "name": "claude-lab",
+  "owner": { "name": "Dilshan de Silva" },
+  "plugins": [
+    {
+      "name": "tweak-ui",
+      "source": "./plugins/tweak-ui",
+      "description": "Visually select webpage elements, tweak color/opacity/margin/padding/etc. in a live browser, and auto-apply the from→to changes to your source."
+    }
+  ]
+}

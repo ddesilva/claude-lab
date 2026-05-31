@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nimbus — Dashboard</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="app">
+    <!-- ---------------------------------------------------- sidebar -->
+    <aside class="sidebar">
+      <div class="brand"><span class="logo"></span> Nimbus</div>
+
+      <a class="nav-item active" href="#"><span class="nav-dot"></span> Overview</a>
+      <a class="nav-item" href="#"><span class="nav-dot"></span> Analytics</a>
+      <a class="nav-item" href="#"><span class="nav-dot"></span> Customers</a>
+      <a class="nav-item" href="#"><span class="nav-dot"></span> Invoices</a>
+      <a class="nav-item" href="#"><span class="nav-dot"></span> Products</a>
+      <a class="nav-item" href="#"><span class="nav-dot"></span> Settings</a>
+
+      <div class="spacer"></div>
+
+      <div class="upgrade">
+        <h4>Upgrade to Pro</h4>
+        <p>Unlock advanced reports and unlimited seats.</p>
+        <button class="btn btn-primary" style="width:100%">Upgrade</button>
+      </div>
+    </aside>
+
+    <!-- ---------------------------------------------------- main -->
+    <main class="main">
+      <div class="topbar">
+        <div>
+          <h1>Good afternoon, Dilshan</h1>
+          <p class="subtitle">Here's what's happening with your store today.</p>
+        </div>
+        <div class="topbar-actions">
+          <input class="search" type="text" placeholder="Search…" />
+          <button class="btn btn-ghost">Export</button>
+          <button class="btn btn-primary">+ New report</button>
+          <div class="avatar"></div>
+        </div>
+      </div>
+
+      <!-- stat cards -->
+      <section class="stats">
+        <div class="card">
+          <div class="stat-label">Total Revenue</div>
+          <div class="stat-value">$48,210</div>
+          <div class="stat-delta up">▲ 12.4% vs last month</div>
+        </div>
+        <div class="card">
+          <div class="stat-label">Active Users</div>
+          <div class="stat-value">3,492</div>
+          <div class="stat-delta up">▲ 5.1% vs last month</div>
+        </div>
+        <div class="card">
+          <div class="stat-label">Conversion</div>
+          <div class="stat-value">2.8%</div>
+          <div class="stat-delta down">▼ 0.6% vs last month</div>
+        </div>
+        <div class="card">
+          <div class="stat-label">Avg. Order</div>
+          <div class="stat-value">$134</div>
+          <div class="stat-delta up">▲ 3.2% vs last month</div>
+        </div>
+      </section>
+
+      <!-- content grid -->
+      <section class="grid">
+        <div class="card chart-card">
+          <div class="panel-head">
+            <h3>Revenue overview</h3>
+            <button class="btn btn-ghost">Last 30 days</button>
+          </div>
+          <div class="chart">
+            <div class="bar" style="height:45%"></div>
+            <div class="bar" style="height:62%"></div>
+            <div class="bar" style="height:38%"></div>
+            <div class="bar" style="height:78%"></div>
+            <div class="bar" style="height:55%"></div>
+            <div class="bar" style="height:88%"></div>
+            <div class="bar" style="height:70%"></div>
+            <div class="bar" style="height:94%"></div>
+            <div class="bar" style="height:60%"></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="panel-head">
+            <h3>Recent activity</h3>
+            <a class="nav-item" href="#" style="padding:4px 8px">View all</a>
+          </div>
+          <div class="activity">
+            <div class="activity-item">
+              <div class="activity-icon">🛒</div>
+              <div class="activity-text"><span class="who">Maya Chen</span> placed an order</div>
+              <div class="activity-time">2m</div>
+            </div>
+            <div class="activity-item">
+              <div class="activity-icon">💳</div>
+              <div class="activity-text"><span class="who">Leo Park</span> upgraded to Pro</div>
+              <div class="activity-time">18m</div>
+            </div>
+            <div class="activity-item">
+              <div class="activity-icon">✉️</div>
+              <div class="activity-text"><span class="who">Ada Owusu</span> invited a teammate</div>
+              <div class="activity-time">1h</div>
+            </div>
+            <div class="activity-item">
+              <div class="activity-icon">⭐</div>
+              <div class="activity-text"><span class="who">Sam Diaz</span> left a 5-star review</div>
+              <div class="activity-time">3h</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- table -->
+        <div class="card table-wrap">
+          <div class="panel-head">
+            <h3>Customers</h3>
+            <button class="btn btn-ghost">Filter</button>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Customer</th>
+                <th>Plan</th>
+                <th>Status</th>
+                <th>MRR</th>
+                <th>Joined</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><div class="user-cell"><span class="ua"></span> Maya Chen</div></td>
+                <td>Pro</td>
+                <td><span class="pill active">Active</span></td>
+                <td>$49</td>
+                <td>Mar 12, 2026</td>
+              </tr>
+              <tr>
+                <td><div class="user-cell"><span class="ua"></span> Leo Park</div></td>
+                <td>Business</td>
+                <td><span class="pill active">Active</span></td>
+                <td>$199</td>
+                <td>Feb 28, 2026</td>
+              </tr>
+              <tr>
+                <td><div class="user-cell"><span class="ua"></span> Ada Owusu</div></td>
+                <td>Starter</td>
+                <td><span class="pill pending">Pending</span></td>
+                <td>$0</td>
+                <td>May 02, 2026</td>
+              </tr>
+              <tr>
+                <td><div class="user-cell"><span class="ua"></span> Sam Diaz</div></td>
+                <td>Pro</td>
+                <td><span class="pill churned">Churned</span></td>
+                <td>$0</td>
+                <td>Jan 19, 2026</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
