@@ -1,0 +1,9 @@
+{
+  "name": "tweak-ui",
+  "description": "Visually select webpage elements and tweak color, opacity, margin, padding and more in a live browser, then auto-generate and apply the from→to changes to your source code.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Dilshan de Silva"
+  },
+  "keywords": ["ui", "css", "design", "visual-editor", "frontend"]
+}
